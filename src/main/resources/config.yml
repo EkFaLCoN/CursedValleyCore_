@@ -1,0 +1,31 @@
+# ==============================================================
+# CursedValleyCore
+# Plugin SADECE asagidaki dunyada calisir. Diger dunyalarda
+# (world, world_nether, world_the_end) hicbir olaya karismaz.
+# ==============================================================
+
+world: cursedvalley
+
+# Merkez bowl = boss alani. Icinde olunce ESYALAR DUSER.
+# Disinda (ayni dunyada) envanter KORUNUR.
+bowl:
+  center-x: 0
+  center-z: 0
+  radius: 70
+  min-y: -64
+  max-y: 320
+
+drop-experience-in-bowl: true
+keep-experience-outside: true
+
+# Yere dusen esyalarin erken silinmesini engeller.
+drops:
+  protect: true
+  # Esyanin yerde kalacagi sure (dakika). 0 = hic silinmesin.
+  lifetime-minutes: 15
+
+warn-on-enter: true
+message-dropped: "&4Bowl icinde oldun &7- &cesyalarin dustu!"
+message-kept: "&7Envanterin korundu."
+message-enter: "&c&lDIKKAT &7- &fBowl bolgesindesin. Burada olursen esyalarini kaybedersin."
+message-exit: "&aGuvenli bolgedesin. Envanterin korunuyor."

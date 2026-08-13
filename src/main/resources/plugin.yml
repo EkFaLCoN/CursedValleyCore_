@@ -1,0 +1,16 @@
+name: CursedValleyCore
+version: ${project.version}
+main: net.cursedvalley.core.CursedValleyCore
+api-version: '26.2'
+author: Cursed Valley
+description: Bowl bolgesi envanter kurali + drop koruma. Sadece belirtilen dunyada calisir.
+commands:
+  cv:
+    description: Cursed Valley ayarlari
+    usage: /cv [reload|setworld|setbowl <yaricap>]
+    permission: cursedvalley.admin
+    aliases: [dvkeep, cursedvalley]
+permissions:
+  cursedvalley.admin:
+    description: Cursed Valley yonetimi
+    default: op
